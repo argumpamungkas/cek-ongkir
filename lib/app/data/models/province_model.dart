@@ -19,4 +19,7 @@ class Province {
   static List<Province> fromJsonList(List list) {
     return list.map((e) => Province.fromJson(e)).toList();
   }
+
+  @override
+  String toString() => province!;
 }

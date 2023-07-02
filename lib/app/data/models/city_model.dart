@@ -37,4 +37,7 @@ class City {
   static List<City> fromJsonList(List list) {
     return list.map((e) => City.fromJson(e)).toList();
   }
+
+  @override
+  String toString() => "$type $cityName";
 }
